@@ -1,7 +1,7 @@
 {
-  "name": "pdf-to-text",
-  "version": "0.0.5",
-  "description": "Extract the text from pdf files",
+  "name": "pdf-to-raw",
+  "version": "0.0.1",
+  "description": "Fork from https://github.com/zetahernandez/pdf-to-text changing from layout to raw",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:zetahernandez/pdf-to-text.git"
+    "url": "git@github.com:raulromanp/pdf-to-text.git"
   },
   "keywords": [
     "pdf",
@@ -20,16 +20,17 @@
     "convert",
     "parse",
     "info",
+    "raw",
     "pdf-to-text",
     "pdftotext",
     "nodejs"
   ],
-  "author": "Fernando Hernandez",
+  "author": "Raul Roman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zetahernandez/pdf-to-text/issues"
+    "url": "https://github.com/raulromanp/pdf-to-text/issues"
   },
-  "homepage": "https://github.com/zetahernandez/pdf-to-text",
+  "homepage": "https://github.com/raulromanp/pdf-to-text",
   "devDependencies": {
     "mocha": "~1.21.4",
     "should": "~4.0.4"
