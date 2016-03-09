@@ -19,7 +19,7 @@ describe('Index test', function() {
   it('should extract text from pdf', function(done) {
     this.timeout(10 * 1000);
     this.slow(5 * 1000);
-    main.pdfToText(pdf_path, function(err, data) {
+    main.pdfToRaw(pdf_path, function(err, data) {
       should.not.exist(err);
       done();
     });

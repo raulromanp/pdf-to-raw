@@ -1,12 +1,12 @@
-# PDF-TO-TEXT
-pdf-to-text is a tool to extract text from pdf. for the moment not support ocr scannig to extract text only works for searchable pdf files. This package doesn't have nodejs dependencies. 
+# PDF-TO-RAW
+pdf-to-raw is a tool to extract text from pdf. for the moment not support ocr scannig to extract text only works for searchable pdf files. This package doesn't have nodejs dependencies.
 
-[![Build Status](https://travis-ci.org/zetahernandez/pdf-to-text.png)](https://travis-ci.org/zetahernandez/pdf-to-text)
+
 
 ## Installation
 =======
 To install the module.
-`npm install pdf-to-text`
+`npm install pdf-to-raw`
 
 You need install the next tools to use this module
 
@@ -40,7 +40,7 @@ apt-get install poppler-utils
 
 Obtain info from pdf file
 ```js
-var pdfUtil = require('pdf-to-text');
+var pdfUtil = require('pdf-to-raw');
 var pdf_path = "absolute_path/to/pdf_file.pdf";
 
 pdfUtil.info(pdf_path, function(err, info) {
@@ -75,19 +75,19 @@ It's retrieve an object with the data info from the pdf file
 You can extract text by a range of pages given an option object with **from** and **to** properties, or simply omit this option to extract all text from the pdf file
 
 ```js
-var pdfUtil = require('pdf-to-text');
+var pdfUtil = require('pdf-to-raw');
 var pdf_path = "absolute_path/to/pdf_file.pdf";
 
 //option to extract text from page 0 to 10
 var option = {from: 0, to: 10};
 
-pdfUtil.pdfToText(upload.path, option, function(err, data) {
+pdfUtil.pdfToRaw(upload.path, option, function(err, data) {
   if (err) throw(err);
   console.log(data); //print text    
 });
 
 //Omit option to extract all text from the pdf file
-pdfUtil.pdfToText(upload.path, function(err, data) {
+pdfUtil.pdfToRaw(upload.path, function(err, data) {
   if (err) throw(err);
   console.log(data); //print all text    
 });
@@ -96,8 +96,8 @@ pdfUtil.pdfToText(upload.path, function(err, data) {
 
 ## Tests
 =======
-To test that your system satisfies the needed dependencies and that module is functioning correctly execute the command in the pdf-to-text module folder
+To test that your system satisfies the needed dependencies and that module is functioning correctly execute the command in the pdf-to-raw module folder
 ```
-cd <project_root>/node_modules/pdf-to-text
+cd <project_root>/node_modules/pdf-to-raw
 npm test
 ```

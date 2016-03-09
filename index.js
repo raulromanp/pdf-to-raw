@@ -16,7 +16,7 @@ PDF.prototype.info = function(pdf_path, cb) {
     info.process(pdf_path, cb);
   });
 }
-PDF.prototype.pdfToText = function(pdf_path, options, cb) {
+PDF.prototype.pdfToRaw = function(pdf_path, options, cb) {
 
   fs.exists(pdf_path, function(exist) {
     if (!exist) return cb('no file exists at the path you specified');
